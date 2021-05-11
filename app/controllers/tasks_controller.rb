@@ -19,6 +19,8 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     @task.update(task_params)
+    # raise
+    @task.completed == 1 ? true : false
     redirect_to task_path(@task)
   end
   def destroy

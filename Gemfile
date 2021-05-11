@@ -27,6 +27,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # custom
 gem 'faker'
+gem 'simple_form'
 
 
 group :development, :test do
